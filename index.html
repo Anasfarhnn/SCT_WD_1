@@ -1,0 +1,426 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Bites | Nutritious Meals & Wellness Tips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <header class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo" data-section="home">Healthy<span>Bites</span></a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="active" data-section="home">Home</a>
+                <a href="#recipes" data-section="recipes">Recipes</a>
+                <a href="#meal-plans" data-section="meal-plans">Meal Plans</a>
+                <a href="#nutrition-tips" data-section="nutrition-tips">Nutrition Tips</a>
+                <a href="#about" data-section="about">About</a>
+                <a href="#contact" data-section="contact">Contact</a>
+            </nav>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="#home" class="active" data-section="home">Home</a>
+        <a href="#recipes" data-section="recipes">Recipes</a>
+        <a href="#meal-plans" data-section="meal-plans">Meal Plans</a>
+        <a href="#nutrition-tips" data-section="nutrition-tips">Nutrition Tips</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="section active-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Nourish Your Body, <span>Delight Your Taste Buds</span></h1>
+                    <p>Discover delicious, nutritious recipes and expert wellness tips to fuel your healthy lifestyle.</p>
+                    <a href="#recipes" class="btn" data-section="recipes">Explore Recipes</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="section-title">Featured Recipes</h2>
+                <div class="recipes-grid">
+                    <div class="recipe-card">
+                        <img src="images/quinoa-bowl.jpg" alt="Quinoa Power Bowl">
+                        <div class="recipe-content">
+                            <h3>Quinoa Power Bowl</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 mins</span>
+                                <span><i class="fas fa-utensils"></i> Vegan</span>
+                            </div>
+                            <a href="#recipes" class="btn btn-small" data-section="recipes">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src="images/salmon.jpg" alt="Lemon Garlic Salmon">
+                        <div class="recipe-content">
+                            <h3>Lemon Garlic Salmon</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 20 mins</span>
+                                <span><i class="fas fa-utensils"></i> High Protein</span>
+                            </div>
+                            <a href="#recipes" class="btn btn-small" data-section="recipes">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <img src="images/smoothie.jpg" alt="Berry Smoothie">
+                        <div class="recipe-content">
+                            <h3>Antioxidant Berry Smoothie</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 5 mins</span>
+                                <span><i class="fas fa-utensils"></i> Low Carb</span>
+                            </div>
+                            <a href="#recipes" class="btn btn-small" data-section="recipes">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section dark-bg">
+                <div class="container">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h3>Today's Wellness Tip</h3>
+                            <p>Start your day with a glass of warm lemon water to kickstart digestion and hydrate your body after sleep.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <h2 class="section-title">Browse by Category</h2>
+                    <div class="categories-grid">
+                        <a href="#recipes" class="category-card" data-section="recipes" data-category="low-carb">
+                            <img src="images/low-carb.jpg" alt="Low Carb">
+                            <h3>Low Carb</h3>
+                        </a>
+                        
+                        <a href="#recipes" class="category-card" data-section="recipes" data-category="high-protein">
+                            <img src="images/high-protein.jpg" alt="High Protein">
+                            <h3>High Protein</h3>
+                        </a>
+                        
+                        <a href="#recipes" class="category-card" data-section="recipes" data-category="vegan">
+                            <img src="images/vegan.jpg" alt="Vegan">
+                            <h3>Vegan</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="section">
+            <div class="container">
+                <h2 class="section-title">Healthy Recipes</h2>
+                
+                <div class="category-nav">
+                    <a href="#recipes" class="category-btn active" data-category="all">All Recipes</a>
+                    <a href="#recipes" class="category-btn" data-category="low-carb">Low Carb</a>
+                    <a href="#recipes" class="category-btn" data-category="high-protein">High Protein</a>
+                    <a href="#recipes" class="category-btn" data-category="vegan">Vegan</a>
+                </div>
+                
+                <div class="recipes-grid">
+                    <div class="recipe-card" data-categories="high-protein">
+                        <img src="images/salmon.jpg" alt="Lemon Garlic Salmon">
+                        <div class="recipe-content">
+                            <h3>Lemon Garlic Salmon</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 20 mins</span>
+                                <span><i class="fas fa-fire"></i> 320 kcal</span>
+                            </div>
+                            <p>Delicious omega-3 rich salmon with garlic and lemon.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="salmon">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-categories="vegan low-carb">
+                        <img src="images/quinoa-bowl.jpg" alt="Quinoa Power Bowl">
+                        <div class="recipe-content">
+                            <h3>Quinoa Power Bowl</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 mins</span>
+                                <span><i class="fas fa-fire"></i> 280 kcal</span>
+                            </div>
+                            <p>Protein-packed vegan bowl with quinoa and veggies.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="quinoa">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-categories="low-carb">
+                        <img src="images/smoothie.jpg" alt="Berry Smoothie">
+                        <div class="recipe-content">
+                            <h3>Antioxidant Berry Smoothie</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 5 mins</span>
+                                <span><i class="fas fa-fire"></i> 180 kcal</span>
+                            </div>
+                            <p>Refreshing smoothie packed with antioxidants.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="smoothie">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-categories="vegan">
+                        <img src="images/vegan-curry.jpg" alt="Vegan Curry">
+                        <div class="recipe-content">
+                            <h3>Coconut Chickpea Curry</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 mins</span>
+                                <span><i class="fas fa-fire"></i> 350 kcal</span>
+                            </div>
+                            <p>Creamy vegan curry with chickpeas and coconut milk.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="curry">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-categories="high-protein">
+                        <img src="images/chicken.jpg" alt="Grilled Chicken">
+                        <div class="recipe-content">
+                            <h3>Grilled Chicken Breast</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 15 mins</span>
+                                <span><i class="fas fa-fire"></i> 250 kcal</span>
+                            </div>
+                            <p>Perfectly grilled chicken with herbs.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="chicken">View Recipe</a>
+                        </div>
+                    </div>
+                    
+                    <div class="recipe-card" data-categories="low-carb">
+                        <img src="images/zoodles.jpg" alt="Zucchini Noodles">
+                        <div class="recipe-content">
+                            <h3>Zucchini Noodles</h3>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 10 mins</span>
+                                <span><i class="fas fa-fire"></i> 150 kcal</span>
+                            </div>
+                            <p>Low-carb zucchini noodles with pesto.</p>
+                            <a href="#" class="btn btn-small recipe-detail-btn" data-recipe="zoodles">View Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="meal-plans" class="section">
+            <div class="container">
+                <h2 class="section-title">Weekly Meal Plans</h2>
+                <div class="meal-plans-grid">
+                    <div class="plan-card">
+                        <div class="plan-badge">Most Popular</div>
+                        <h3>Weight Loss Plan</h3>
+                        <p>7-day plan focused on healthy, low-calorie meals</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> 1,500 calories/day</li>
+                            <li><i class="fas fa-check"></i> Balanced macros</li>
+                            <li><i class="fas fa-check"></i> Shopping list included</li>
+                        </ul>
+                        <a href="#" class="btn btn-small">View Plan</a>
+                    </div>
+                    
+                    <div class="plan-card">
+                        <h3>Muscle Building</h3>
+                        <p>High-protein meals to support your workouts</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> 2,200 calories/day</li>
+                            <li><i class="fas fa-check"></i> 40% protein</li>
+                            <li><i class="fas fa-check"></i> Pre/post workout meals</li>
+                        </ul>
+                        <a href="#" class="btn btn-small">View Plan</a>
+                    </div>
+                    
+                    <div class="plan-card">
+                        <h3>Plant-Based</h3>
+                        <p>Delicious vegan meals for the whole week</p>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> 100% plant-based</li>
+                            <li><i class="fas fa-check"></i> Complete proteins</li>
+                            <li><i class="fas fa-check"></i> Meal prep guide</li>
+                        </ul>
+                        <a href="#" class="btn btn-small">View Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutrition-tips" class="section">
+            <div class="container">
+                <h2 class="section-title">Nutrition Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Hydration</h3>
+                        <p>Drink at least 8 glasses of water daily for optimal health. Add lemon or cucumber for flavor.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-utensil-spoon"></i>
+                        </div>
+                        <h3>Portion Control</h3>
+                        <p>Use smaller plates to naturally reduce portion sizes. Listen to your hunger cues.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Whole Foods</h3>
+                        <p>Focus on minimally processed foods for better nutrition and digestion.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h3>Fiber Intake</h3>
+                        <p>Include 25-30g of fiber daily from fruits, vegetables, and whole grains.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Healthy Fats</h3>
+                        <p>Incorporate avocados, nuts, and olive oil for heart-healthy fats.</p>
+                    </div>
+                    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3>Mindful Eating</h3>
+                        <p>Eat slowly without distractions to improve digestion and satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Healthy Bites</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Healthy Bites was founded in 2020 with a simple mission: to make healthy eating accessible, delicious, and sustainable for everyone.</p>
+                        <p>Our team of nutritionists and chefs work together to create recipes that are both nutritious and full of flavor. We believe that healthy eating shouldn't mean sacrificing taste or spending hours in the kitchen.</p>
+                        <p>Every recipe is carefully crafted to provide balanced nutrition while being simple enough for home cooks of all levels. We test each recipe multiple times to ensure it works perfectly in real home kitchens.</p>
+                    </div>
+                   
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="What's this about?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-envelope"></i> info@healthybites.com</p>
+                        <p><i class="fas fa-phone"></i> +91 9778231208</p>
+                        <p><i class="fas fa-map-marker-alt"></i> kasargod,kerala,india</p>
+
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Healthy Bites</h3>
+                    <p>Making healthy eating simple, delicious, and accessible for everyone.</p>
+                    <div class="newsletter">
+                        <h4>Subscribe to our newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-section="home">Home</a></li>
+                        <li><a href="#recipes" data-section="recipes">Recipes</a></li>
+                        <li><a href="#meal-plans" data-section="meal-plans">Meal Plans</a></li>
+                        <li><a href="#nutrition-tips" data-section="nutrition-tips">Nutrition Tips</a></li>
+                        <li><a href="#about" data-section="about">About Us</a></li>
+                        <li><a href="#contact" data-section="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@healthybites.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9778231208</p>
+                    <p><i class="fas fa-map-marker-alt"></i> kasargod,kerala,india</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Healthy Bites. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
